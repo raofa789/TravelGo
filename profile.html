@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile - TravelGo</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/all.min.css">
+
     <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    <nav class="nav-bar">
+     <nav class="navbar">
         <div class="logo">TravelGo</div>
-        <ul class="nav-left">      
+        <ul class="nav-links">      
             <li>
               <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="flights.html">Filghts</a>
+              <a class="active" href="flights.html">Filghts</a>
             </li>
             <li>
               <a href="hotels.html">Hotels</a>
@@ -23,10 +27,12 @@
               <a href="guides.html">Guides</a>
             </li>
             <li>
-                <a class="active" href="profile.html">Profile</a>
-            </li>
-            <li>
                <a href="contact.html">Contact</a>
+            </li>
+              <li>
+              <a href="profile.html" class="user-icon" class="active" >
+            <i class="fa-solid fa-user"></i>
+          </a>
             </li>
        </ul>                
     </nav>

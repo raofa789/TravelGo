@@ -28,9 +28,15 @@ body{
     text-decoration: none;
     font-size: 17px;
 }
+.fa-solid{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 40px;
+}
 .nav-links li a.active,
 .nav-links li a:hover{
-  text-decoration: underline;
+  text-decoration: none;
   color: #33d1cc;
 }
 .header-flights{
@@ -56,6 +62,48 @@ body{
 .search{
     margin-top: -4px;
 }
+.guide-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+.guide-card{
+    background: white;
+    width: 250px;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 30px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.guide-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.guide-card h3{
+    margin: 10px 0 5px;
+    color: #0a3d62;
+}
+.guide-card p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.guide-card button{
+    padding: 10px 20px;
+    background: #0a3d62;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.guide-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, o, 0.15);
+}
 .flight-form{
     display: flex;
     justify-content: center;
@@ -74,6 +122,8 @@ body{
     color: white;
     border: none;
     cursor: pointer;
+    height: 42px;
+    border-radius: 5px;
 }
 .flight-form button:hover{
     background: #33d1cc;

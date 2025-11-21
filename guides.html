@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guides - TravelGo </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="guides.css">
     <!-- <link rel="stylesheet" href="TravelGo.css"> -->
 </head>
 <body>
-    <nav class="navbar">
+     <nav class="navbar">
         <div class="logo">TravelGo</div>
         <ul class="nav-links">      
             <li>
               <a href="index.html">Home</a>
             </li>
             <li>
-              <a  href="flights.html">Filghts</a>
+              <a href="flights.html">Filghts</a>
             </li>
             <li>
               <a href="hotels.html">Hotels</a>
             </li>
             <li >
-              <a class="active" href="guides.html">Guides</a>
-            </li>
-            <li>
-              <a href="profile.html">Profile</a>
+              <a href="guides.html" class="active">Guides</a>
             </li>
             <li>
                <a href="contact.html">Contact</a>
             </li>
-       </ul>              
+              <li>
+              <a href="profile.html" class="user-icon">
+            <i class="fa-solid fa-user"></i>
+          </a>
+            </li>
+       </ul>                
     </nav>
     <header class="header-guides">
         <h2>Share a photo from your trip whith us</h2>
@@ -78,8 +82,9 @@
           <h3>sea</h3>
            <p>Languages: Spanish & English</p>
            <button>Book Now</button>
-        </div>
-        <div class="memory-upload">
+        </div>  
+    </section>
+    <div class="memory-upload guide-card col-sm-6 col-md-4 clo-lg-3">
           <label for="imageUpload" class="upload-btn">Choose a picture</label>
           <input type="file" id="imageUpload" class="upload-input" accept="image/*">
         
@@ -87,7 +92,7 @@
             <span class="preview-placeholder">Your image will appear here after uploading</span>
           </div>
         </div>
-        <script>
+                <script>
           document.getElementById('imageUpload').addEventListener('change',function(e){
             const file = e.target.file[0];
             if (!file) return;
@@ -98,7 +103,6 @@
             };
             reader.readAsDataURL(file);
           });
-        </script>   
-    </section>
+        </script> 
 </body>
 </html>

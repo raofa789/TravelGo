@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="flights.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> flights - TravelGo </title>
@@ -23,10 +25,12 @@
               <a href="guides.html">Guides</a>
             </li>
             <li>
-              <a href="profile.html">Profile</a>
-            </li>
-            <li>
                <a href="contact.html">Contact</a>
+            </li>
+              <li>
+              <a href="profile.html" class="user-icon">
+            <i class="fa-solid fa-user"></i>
+          </a>
             </li>
        </ul>                
     </nav>
@@ -34,7 +38,7 @@
         <h2>Find Your Perfect Flight</h2>
         <p>Best prices, fast booking, easy travel experience</p>
     </header>
-    <section class="search-section">
+    <!-- <section class="search-section">
         <h2 class="search">Search Flights</h2>
         <form class="flight-form">
             <input type="text" placeholder="From" required>
@@ -81,7 +85,53 @@
               </div>
             </div>  
        </div>
+    </section> -->
+    <section class="search-section">
+                <h2 class="search">Search Flights</h2>
+        <form class="flight-form">
+            <input type="text" placeholder="From" required>
+            <input type="text" placeholder="To" required>
+            <input type="data"required placeholder="Notes">
+            <button type="submit">Search</button>
+        </form>
+        <div class="guide-list">
+           <div class="guide-card col-sm-6 col-md-4 clo-lg-3">
+             <img src="image/لافوثقققم.webp" class="card-img-top" alt="Blog Post">
+            <div class="card-body">
+               <span class="text-black-50">Cairo -> Paris</span>
+               <p>Departure: 06:12 AM</p>
+               <p>Price:450$</p>
+                <button 
+                 onclick="window.location.href='travel-form.html'"
+                 class="book-btn">Book Now</button>
+            </div>
+           </div>
+           <div class="guide-card col-sm-6 col-md-4 clo-lg-3">
+              <img src="image/مةنةىاهخ.webp" class="card-img-top" alt="Blog Post">
+                <div class="card-body">
+                  <span class="text-black-50">Cairo -> Istanbul</span>
+                  <p>Departure: 12:45 AM</p>
+                   <p class="mb-5">Price:280$</p>
+                        <div class="rounded-pill">
+                         <button 
+                         onclick="window.location.href='travel-form.html'"
+                         class="book-btn">Book Now</button>
+                        </div>
+                </div>
+            </div>
+            <div class="guide-card col-sm-6 col-md-4 clo-lg-3">
+               <img src="image/1355896-انظار-العالم-تتجه-إلى-برج-خليفة.jpg" class="card-img-top" alt="Blog Post">
+                <div class="card-body">
+                  <span class="text-black-50">Cairo -> Dubai</span>
+                   <p>Departure: 08:30 AM</p>
+                   <p>Price:320$</p>
+                     <button 
+                      onclick="window.location.href='travel-form.html'"
+                       class="book-btn">Book Now</button>
+              </div>
+            </div>
+        
     </section>
-</body>
+  </body>
 </html>
 </html>
